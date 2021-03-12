@@ -19,6 +19,14 @@ dependencies:
   cupertino_icons: ^1.0.0
   multi_circular_slider: ^0.0.3
   flutter_svg: 
+  flutter_icons: ^1.1.0
+  fluttertoast: ^7.1.8 
+
+  #utils
+  path_provider:
+  mime_type:
+  open_file:
+  video_player:
 
 dev_dependencies:
   flutter_test:
