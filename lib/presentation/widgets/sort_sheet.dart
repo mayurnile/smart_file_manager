@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:get/get.dart';
 
 import '../../core/core.dart';
-import 'package:filex/providers/providers.dart';
+import '../../providers/core_provider.dart';
+// import 'package:filex/providers/providers.dart';
 
 class SortSheet extends StatelessWidget {
+  final categoryController = Get.put(CoreProvider());
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
@@ -33,16 +36,17 @@ class SortSheet extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ListTile(
                     onTap: () async {
-                      await Provider.of<CategoryProvider>(context,
-                              listen: false)
-                          .setSort(index);
-                      Navigator.pop(context);
+                      // await Provider.of<CategoryProvider>(context,
+                      //         listen: false)
+                      //     .setSort(index);
+                      // Navigator.pop(context);
                     },
                     contentPadding: EdgeInsets.all(0),
-                    trailing: index ==
-                            Provider.of<CategoryProvider>(context,
-                                    listen: false)
-                                .sort
+                    trailing: true
+                        // index ==
+                        // Provider.of<CategoryProvider>(context,
+                        //         listen: false)
+                        //     .sort
                         ? Icon(
                             Feather.check,
                             color: Colors.blue,
@@ -53,10 +57,11 @@ class SortSheet extends StatelessWidget {
                       "${Constants.sortList[index]}",
                       style: TextStyle(
                         fontSize: 14.0,
-                        color: index ==
-                                Provider.of<CategoryProvider>(context,
-                                        listen: false)
-                                    .sort
+                        color: true
+                            // index ==
+                            //         Provider.of<CategoryProvider>(context,
+                            //                 listen: false)
+                            //             .sort
                             ? Colors.blue
                             : Theme.of(context).textTheme.headline6.color,
                       ),

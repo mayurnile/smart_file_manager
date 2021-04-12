@@ -18,15 +18,21 @@ dependencies:
   #UI
   cupertino_icons: ^1.0.0
   multi_circular_slider: ^0.0.3
-  flutter_svg: 
+  # flutter_svg: 
+  flutter_svg: ^0.20.0-nullsafety.3
   flutter_icons: ^1.1.0
   fluttertoast: ^7.1.8 
+  percent_indicator: ^3.0.1
+
 
   #utils
   path_provider:
   mime_type:
   open_file:
   video_player:
+  
+  #share prefrences
+  shared_preferences: ^0.5.12+4
 
 dev_dependencies:
   flutter_test:
