@@ -1,10 +1,11 @@
 import 'dart:io';
 
-import 'package:smart_file_manager/utils/utils.dart';
 import 'package:get/get.dart';
-import 'package:mime_type/mime_type.dart';
 import 'package:path/path.dart';
+import 'package:mime_type/mime_type.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../core/core.dart';
 
 class CategoryProvider extends GetxController {
   CategoryProvider() {
@@ -13,14 +14,14 @@ class CategoryProvider extends GetxController {
   }
 
   bool loading = false;
-  List<FileSystemEntity> downloads = List();
-  List<String> downloadTabs = List();
+  List<FileSystemEntity> downloads = [];
+  List<String> downloadTabs = [];
 
-  List<FileSystemEntity> images = List();
-  List<String> imageTabs = List();
+  List<FileSystemEntity> images = [];
+  List<String> imageTabs = [];
 
-  List<FileSystemEntity> audio = List();
-  List<String> audioTabs = List();
+  List<FileSystemEntity> audio = [];
+  List<String> audioTabs = [];
 
   bool showHidden = false;
   int sort = 0;

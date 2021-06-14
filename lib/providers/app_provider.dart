@@ -1,9 +1,10 @@
 import 'package:get/get.dart';
-import 'package:smart_file_manager/utils/utils.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../core/core.dart';
 
 class AppProvider extends GetxController {
   AppProvider() {

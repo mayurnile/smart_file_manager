@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import './route_names.dart';
+import 'route_names.dart';
 import '../../presentation/presentation.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {

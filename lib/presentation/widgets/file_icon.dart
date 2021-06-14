@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:mime_type/mime_type.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
-import './widgets.dart';
+import 'widgets.dart';
 
 class FileIcon extends StatelessWidget {
   final FileSystemEntity file;

@@ -4,7 +4,7 @@ import 'package:path/path.dart';
 import 'package:flutter/material.dart';
 import 'package:open_file/open_file.dart';
 
-import './widgets.dart';
+import 'widgets.dart';
 import '../../core/core.dart';
 
 class FileItem extends StatelessWidget {
