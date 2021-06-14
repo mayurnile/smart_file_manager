@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:get/get.dart';
+import 'package:smart_file_manager/providers/category_provider.dart';
 
 import '../../core/core.dart';
-import 'package:filex/providers/providers.dart';
+import '../../providers/category_provider.dart';
 
 class SortSheet extends StatelessWidget {
+  final CategoryProvider categoryController = Get.find();
   @override
   Widget build(BuildContext context) {
     return FractionallySizedBox(
@@ -33,32 +36,38 @@ class SortSheet extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return ListTile(
                     onTap: () async {
-                      await Provider.of<CategoryProvider>(context,
-                              listen: false)
-                          .setSort(index);
+                      // await Provider.of<CategoryProvider>(context,
+                      //         listen: false)
+                      //     .setSort(index);
+                      // Navigator.pop(context);
+                      await categoryController.setSort(index);
                       Navigator.pop(context);
                     },
                     contentPadding: EdgeInsets.all(0),
-                    trailing: index ==
-                            Provider.of<CategoryProvider>(context,
-                                    listen: false)
-                                .sort
-                        ? Icon(
-                            Feather.check,
-                            color: Colors.blue,
-                            size: 16,
-                          )
-                        : SizedBox(),
+                    trailing:
+                        // index ==
+                        // Provider.of<CategoryProvider>(context,
+                        //         listen: false)
+                        //     .sort
+                        index == categoryController.sort
+                            ? Icon(
+                                Feather.check,
+                                color: Colors.blue,
+                                size: 16,
+                              )
+                            : SizedBox(),
                     title: Text(
                       "${Constants.sortList[index]}",
                       style: TextStyle(
                         fontSize: 14.0,
-                        color: index ==
-                                Provider.of<CategoryProvider>(context,
-                                        listen: false)
-                                    .sort
-                            ? Colors.blue
-                            : Theme.of(context).textTheme.headline6.color,
+                        color:
+                            // index ==
+                            //         Provider.of<CategoryProvider>(context,
+                            //                 listen: false)
+                            //             .sort
+                            index == categoryController.sort
+                                ? Colors.blue
+                                : Theme.of(context).textTheme.headline6.color,
                       ),
                     ),
                   );
