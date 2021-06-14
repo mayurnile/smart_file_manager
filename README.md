@@ -53,6 +53,7 @@
 <br><br>
 <img src="assets/media/Smart-File-Manager-Home.gif" height=512>
 <br><br>
+
 ### If you want the multiprogress bar widget to be implemented in your project, here I've created a package of it for you !
 
 Package Link - [Multi Progress Bar](https://pub.dev/packages/multi_circular_slider)
