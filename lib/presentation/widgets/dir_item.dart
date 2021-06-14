@@ -4,7 +4,7 @@ import 'package:path/path.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
-import './widgets.dart';
+import 'widgets.dart';
 
 class DirectoryItem extends StatelessWidget {
   final FileSystemEntity file;

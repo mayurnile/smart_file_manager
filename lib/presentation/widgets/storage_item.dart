@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:filex/screens/folder/folder.dart';
+// import 'package:filex/screens/folder/folder.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 import '../../core/core.dart';
@@ -26,10 +26,10 @@ class StorageItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       onTap: () {
-        Navigate.pushPage(
-          context,
-          Folder(title: title, path: path),
-        );
+        // Navigate.pushPage(
+        //   context,
+        //   Folder(title: title, path: path),
+        // );
       },
       contentPadding: EdgeInsets.only(right: 20),
       leading: Container(
