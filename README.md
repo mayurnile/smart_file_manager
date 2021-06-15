@@ -21,14 +21,14 @@
 
 
 # About
-#### This is my B.E Final Year Project, which serves the purpose of File Manager with some other features helping user to keep his device bloatfree and perform to it's optimum performance all time. The application has features like
+#### This is my B.E. Final Year Project, which is a File Manager with a few other features that help the user keep his device bloat-free and performing at its best all of the time. The application has features like
 -   File Manager
 -   Near & Exact Duplicate Images
 -   Meme Classifier
 -   File Sharing
 
 ## Pending from our side
--   The File sharing feature is still yet to be implemented
+-   The File sharing feature is yet to be implemented
 -   The whole project will be ported to Dart's 'Sound Null-Safety' very soon
 
 <div><br><br></div>
